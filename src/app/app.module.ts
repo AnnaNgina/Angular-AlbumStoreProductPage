@@ -19,7 +19,7 @@ import { ProductService } from './product.service';
     FormsModule,
     HttpModule
   ],
-  providers: [ProductService]
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
