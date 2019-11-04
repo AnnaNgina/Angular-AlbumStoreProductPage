@@ -5,10 +5,10 @@ import { ProductService } from '../product.service';
   templateUrl:'./product-description.component.html',
   styleUrls: ['./product-description.component.css']
 })
-@Injectable()
+
   export class ProductDescriptionComponent implements OnInit{
     albumInfo;
-  constructor(private _ProductService :productService){}
+  constructor(ProductService :productService){}
   ngOnInit(){
     this._ProductService.getAlbum(1).subscribe(response => this.albumInfo = response);
   }
