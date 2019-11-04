@@ -5,6 +5,7 @@ import { ProductService } from '../product.service';
   templateUrl:'./product-description.component.html',
   styleUrls: ['./product-description.component.css']
 })
+@Injectable()
   export class ProductDescriptionComponent implements OnInit{
     albumInfo;
   constructor(private _ProductService :productService){}
