@@ -3,3 +3,12 @@ p{
   padding-top:10px;
 
 }
+ul{
+  list-style-type: none;
+}
+li{
+  display: block;
+}
+button{
+  line-height: 1;
+}
