@@ -20,13 +20,17 @@ const appRoutes: Routes =[
 @NgModule({
   declarations: [
     AppComponent,
-    ProductPageComponent
-      RouterModule.forRoot(appRoutes)
+    ProductPageComponent,
+    ProductDescriptionComponent,
+    ProductTracklistingComponent,
+    ProductListComponent
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(appRoutes)
 
   ],
   providers: [ProductService],
