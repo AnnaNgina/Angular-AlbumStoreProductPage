@@ -9,9 +9,9 @@ import { ProductDescriptionComponent } from './product-description/product-descr
 import { ProductService } from './product.service';
 import { RouterModule,  Routes } from '@angular/router';
 const appRoutes: Routes =[
-  {path:'products',component:ProductListComponent}
-{path:'product/:id', component:ProductPageComponent}
-{path:'',redirectTo:' products', pathMatch:'full'}
+  {path:'products',component:ProductListComponent},
+{path:'product/:id', component:ProductPageComponent},
+{path:'',redirectTo: ' products', pathMatch:'full'},
 ];
 
 
