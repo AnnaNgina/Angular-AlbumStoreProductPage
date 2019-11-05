@@ -7,6 +7,11 @@ import { AppComponent } from './app.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ProductDescriptionComponent } from './product-description/product-description.component';
 import { ProductService } from './product.service';
+import { RouterModule,  Routes } from '@angular/router';
+const appRoutes: Routes =[{path:'product',component:ProductListComponent}
+{path:'product/:id', component:ProductPageComponent}];
+
+
 
 
 @NgModule({
@@ -18,6 +23,7 @@ import { ProductService } from './product.service';
     BrowserModule,
     FormsModule,
     HttpModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
