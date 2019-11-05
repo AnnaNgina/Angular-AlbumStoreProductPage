@@ -9,7 +9,7 @@ import { ProductService} from '../product.service';
 
 })
 export class ProductListComponent implements OnInit{
-Products = Product[];
+products = Product[];
 
   constructor(private _productService :ProductService ){}
   ngOnInit(){
